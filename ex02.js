@@ -2,4 +2,7 @@
 // containing the elements that are in the first array but not in the second array.
 // Example: arrayDifference([1, 2, 3], [2, 3, 4]) should return [1].
 
+const arrayDifference = (firstArray, secondArray) => {
+  return firstArray.filter((item) => !secondArray.includes(item));
+};
 console.log(arrayDifference([1, 2, 3], [2, 3, 4])); // Expected output: [1]
